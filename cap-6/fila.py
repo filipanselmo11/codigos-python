@@ -25,12 +25,12 @@ indice = 0  # cont = 0
 
 while indice < tamFila:
     print(f"Fila atual({indice}): {minhaFila}")
-    print(f"Tamanho atual da fila: {tamFila}")
+    # print(f"Tamanho atual da fila: {tamFila}")
     item_removido = minhaFila.pop(0)
     print(f"Item removido: {item_removido}")
     print("\t")
     indice += 1
-    tamFila -= 1
+    # tamFila -= 1
 
 print(f"Fila Atual: {minhaFila}")
 
