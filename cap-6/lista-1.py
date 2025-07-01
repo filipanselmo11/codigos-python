@@ -27,13 +27,19 @@ notas.append(novaNota)
 novaLista = [10.0, "Mario", True, False, "Jonas"]
 tamNovaLista = len(novaLista)
 #Método 1
-for i in range(tamNovaLista):
-	print(f"Índice ({i}): {novaLista[i]}")
+# for i in range(tamNovaLista):
+# 	print(f"Índice ({i}): {novaLista[i]}")
 
 #Método 2
 
-# indice = 0
-# while indice < tamNovaLista:
-#     print(f"Indice: {indice} - Conteúdo do Índice({indice}): {novaLista[indice]}")
-#     indice += 1 #indice = indice + 1
-# print(f"Nova lista: {novaLista}")
+indice = 0
+while indice < tamNovaLista:
+    print(f"Índice ({indice}): {novaLista[indice]}")
+    indice += 1
+
+print(f"Nova lista: {novaLista}")
+
+# novo_valor = input("Insira um valor que vai ser adicionado na lista: ")
+# novaLista.append(novo_valor)
+
+# print(f"Nova lista atualizada: {novaLista}")
