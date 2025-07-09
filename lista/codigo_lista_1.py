@@ -44,8 +44,6 @@ while i < tamLista:
             # elementosRepetidos.append(lista[i])
             if lista[i] not in elementosRepetidos:
                 elementosRepetidos.append(lista[i])
-        else:
-            print(f"A lista não possui elementos repetidos")
         j += 1
     i += 1
 
