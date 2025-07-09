@@ -1,16 +1,14 @@
 
 lista = []
-tamLista = len(lista)
 
-while tamLista < 9:
+while len(lista) < 9:
     x = int(input("Digite um valor para x: "))
     lista.append(x)
-    tamLista = len(lista)
 
 print()
 
 print(f"Lista: {lista}")
-print(f"Tamanho da lista: {tamLista}")
+print(f"Tamanho da lista: {len(lista)}")
 
 print()
 
@@ -18,7 +16,7 @@ listaNumeroPositivo = []
 listaNumeroNegativo = []
 
 
-for indice in range(tamLista):
+for indice in range(len(lista)):
     # print(f"Elementos da fila: {fila[indice]}")
 
     if lista[indice] > 0:
@@ -37,9 +35,9 @@ print(f"Lista de números negativos: {listaNumeroNegativo}")
 i = 0
 elementosRepetidos = []
 
-while i < tamLista:
+while i < len(lista):
     j = i + 1
-    while j < tamLista:
+    while j < len(lista):
         if lista[i] == lista[j]:
             # elementosRepetidos.append(lista[i])
             if lista[i] not in elementosRepetidos:
